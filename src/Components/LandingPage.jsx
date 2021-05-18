@@ -4,27 +4,32 @@ class LandingPage extends Component {
   render() {
     return (
       <div className="landingPage">
-          
-            <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-                <img
-                src="/images/cmpgnr-logo.png"
-                width="30"
-                height="30"
-                class="d-inline-block align-top"
-                alt="Logo"
-                />
-                Campaigner
-            </a>
-            </nav>
+        <video
+          className="landing-page-video"
+          src="https://storage.coverr.co/videos/STGCDNDz2bG1wn01N22Z3JHauO931im1t?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6Ijg3NjdFMzIzRjlGQzEzN0E4QTAyIiwiaWF0IjoxNjIxMzQxNzU2fQ.ivjRk6kGOVuEJ89HsOivee137m82HDRqeg2qKPCj4Xo"
+          autoPlay
+          loop
+          muted
+        />
 
-          
+        <nav className="navbar navbar-dark navbar-landing">
+          <a className="navbar-brand" href="#">
+            <img
+              src="/images/cmpgnrLogo.png"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+              alt="Logo"
+            />
+            Campaigner
+          </a>
+        </nav>
 
         <form className="credentialsForm">
           <div className="form-floating mb-3">
             <input
               type="email"
-              class="form-control"
+              className="form-control"
               id="floatingInput"
               placeholder="name@example.com"
             ></input>
@@ -40,11 +45,9 @@ class LandingPage extends Component {
             <label for="floatingPassword">Password</label>
           </div>
           <div className="btn-submit">
-            <input
-              className="btn btn-primary"
-              type="submit"
-              value="Submit"
-            ></input>
+            <button className="btn btn-primary" type="submit">
+              Log In
+            </button>
           </div>
         </form>
       </div>
